@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/annyang/2.6.1/annyang.min.js"></script>
+    <title>Simulador de Automação Residencial com Comando de Voz</title>
+</head>
+<body>
+    <div class="container">
+      <img src="/img/alexa.jpg" alt="" srcset="">
+        <h1>Simulador de Automação Residencial</h1>
+        <div id="status">Status: Aguardando comando de voz</div>
+        <button id="startBtn">Iniciar Reconhecimento</button>
+        <button id="stopBtn" disabled>Parar Reconhecimento</button>
+        <div id="devices">
+          <div class="device">
+            Luz
+            <div class="device-status off" id="Light"></div>
+          </div>
+          <div class="device">
+            freezer
+            <div class="device-status off" id="freezer"></div>
+          </div>
+          <div class="device">
+            TV
+            <div class="device-status off" id="tv"></div>
+          </div>
+        </div>
+      </div>
+      <script src="script.js"></script>      
+</body>
+</html>
